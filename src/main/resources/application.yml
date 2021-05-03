@@ -1,0 +1,16 @@
+spring:
+  profiles.active: ${SPRING_ACTIVE_PROFILE}
+
+---
+
+spring:
+  config.activate.on-profile: dev
+  h2.console.enabled: true
+  datasource.url: jdbc:h2:mem:/.gites
+  jpa:
+    hibernate.ddl-auto: create
+
+dataLoader:
+  populate: true
+
+---
