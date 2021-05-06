@@ -1,0 +1,25 @@
+{
+  "name": "gites",
+  "authors": [
+    "SokolAK <sokolak87@gmail.com>"
+  ],
+  "description": "emoji for git commits",
+  "main": "",
+  "keywords": [
+    "git",
+    "emoji"
+  ],
+  "license": "MIT",
+  "homepage": "www.sokolak.pl",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-resource": "^1.8.2"
+  }
+}

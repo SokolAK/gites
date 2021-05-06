@@ -1,6 +1,7 @@
 package pl.sokolak.gites.tag;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/tags")
+@RequestMapping("/api/tags")
 public class TagController {
 
     @Autowired
@@ -22,7 +23,8 @@ public class TagController {
     }
 
     @GetMapping("/{id}")
-    private Optional<Tag> getTag(@PathVariable String id) {
-        return tagService.findById(id);
+    private ResponseEntity<Tag> getTag(@PathVariable String id) {
+        Optional<Tag> tag = tagService.findById(id);
+        return tag.map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
     }
 }

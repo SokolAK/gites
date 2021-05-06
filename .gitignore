@@ -34,4 +34,4 @@ build/
 
 
 ### gites ###
-data.json
+src/main/resources/data.json

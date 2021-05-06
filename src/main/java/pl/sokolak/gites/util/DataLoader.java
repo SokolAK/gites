@@ -24,11 +24,11 @@ public class DataLoader implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-//        if (populate) {
-//            ObjectMapper mapper = new ObjectMapper();
-//            List<Emoji> emojis = mapper.readValue(new File("data.json"), new TypeReference<>() {
-//            });
-//            emojiService.save(emojis);
-//        }
+        if (populate) {
+            ObjectMapper mapper = new ObjectMapper();
+            List<Emoji> emojis = mapper.readValue(new File("src/main/resources/data.json"), new TypeReference<>() {
+            });
+            emojiService.save(emojis);
+        }
     }
 }

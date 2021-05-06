@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/emojis")
+@RequestMapping("/api/emojis")
 public class EmojiController {
 
     @Autowired
@@ -36,8 +36,8 @@ public class EmojiController {
     @GetMapping("/populate")
     private void populate(HttpServletResponse response) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-        List<Emoji> emojis = mapper.readValue(new File("data.json"), new TypeReference<>() {});
+        List<Emoji> emojis = mapper.readValue(new File("src/main/resources/data.json"), new TypeReference<>() {});
         emojiService.save(emojis);
-        response.sendRedirect("/emojis");
+        response.sendRedirect("/api/emojis");
     }
 }
