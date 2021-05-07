@@ -2,7 +2,9 @@
 <html ng-app="app">
 
     <head>
-        <meta charset="UTF-8"/>
+        <meta charset="utf-8">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/gites.css" rel="stylesheet">
         <title>gites</title>
     </head>
 
@@ -14,22 +16,58 @@
 
     <body ng-controller="EmojiController as emControl">
 
-        <ul>
-            <li ng-repeat="emoji in emControl.emojis">
-                <dev>
-                    <span class="image">{{emoji.img}}</span></br>
-                    name: :{{emoji.id}}:</br>
-                    hex: {{emoji.hex}}</br>
-                    dec: {{emoji.dec}}</br>
-                    categories: <span ng-repeat="category in emoji.categories">{{category.id}}{{$last ? '' : ', '}}</span></br>
-                    tags: <span ng-repeat="tag in emoji.tags">{{tag.id}}{{$last ? '' : ', '}}</span>
-                </dev>
-            </li>
-        </ul>
+<!--    <div  class="container mt-4">-->
+<!--        <div class="row">-->
+<!--            <div ng-repeat="emoji in emControl.emojis" class="col-auto mb-3">-->
+<!--                <div class="card" style="width: 20rem;">-->
+<!--                    <div class="card-img-top d-flex align-items-center bg-light">-->
+<!--                        <h5 class="card-title">{{emoji.image}}</h5>-->
+<!--                        <p class="card-text">:{{emoji.id}}:</br>{{emoji.hex}}</br>{{emoji.dec}}</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <div  class="container mt-4">
+        <div class="row">
+            <div ng-repeat="emoji in emControl.emojis" class="col-auto mb-3">
+                <div class="card" style="width: 20rem;">
+                    <div class="card flex-row flex-wrap">
+                        <div class="card-header text-center border-0" style="width: 6rem;">
+                            <h1 class="card-title">{{emoji.image}}</h1>
+                        </div>
+                        <div class="card-block px-2">
+                            <p class="card-text">
+                                :{{emoji.id}}:</br>
+                                hex: {{emoji.hex}}</br>
+                                dec: {{emoji.dec}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--        <ul>-->
+<!--            <li ng-repeat="emoji in emControl.emojis">-->
+<!--                <dev>-->
+<!--                    <span class="image">{{emoji.image}}</span></br>-->
+<!--                    name:       :{{emoji.id}}:</br>-->
+<!--                    hex:        {{emoji.hex}}</br>-->
+<!--                    dec:        {{emoji.dec}}</br>-->
+<!--                    categories: <span ng-repeat="category in emoji.categories">{{category.id}}{{$last ? '' : ', '}}</span></br>-->
+<!--                    tags:       <span ng-repeat="tag in emoji.tags">{{tag.id}}{{$last ? '' : ', '}}</span>-->
+<!--                </dev>-->
+<!--            </li>-->
+<!--        </ul>-->
 
         <script type="text/javascript" src="js/lib/angular/angular.js"></script>
         <script type="text/javascript" src="js/lib/angular-resource/angular-resource.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
+        <script src="js/lib/bootstrap.min.js"></script>
     </body>
 
 </html>

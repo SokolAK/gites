@@ -22,6 +22,7 @@ public class Emoji {
     private String id;
     private String hex;
     private String dec;
+    private String image;
 
     @ManyToMany
     @JsonIgnoreProperties("emojis")
@@ -31,10 +32,11 @@ public class Emoji {
     @JsonIgnoreProperties("emojis")
     private List<Tag> tags = new ArrayList<>();
 
-    public Emoji(String id, String hex, String dec) {
+    public Emoji(String id, String hex, String dec, String image) {
         this.id = id;
         this.hex = hex;
         this.dec = dec;
+        this.image = image;
     }
 
     public void addCategory(Category category) {
