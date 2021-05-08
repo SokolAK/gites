@@ -1,4 +1,53 @@
 html body {
-    background-color: rgba(0,0,0,1.00);
-
+    background-color: rgba(64,64,64,1.00);
 }
+
+.card {
+    background-color: rgba(48,48,48,1.00);
+    border-radius: 5px !important;
+    width: 19rem;
+}
+
+.card-header {
+    background-color: rgba(128,128,128,1.00);
+    border-radius: 5px 0 0 5px !important;
+    width: 6rem;
+}
+
+.card-text {
+    color: rgba(255,255,255,1.00);
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.navbar-dark {
+    background-color: rgba(48,48,48,1.00) !important;
+}
+
+.footer {
+    background-color: rgba(48,48,48,1.00) !important;
+}
+
+
+.form-control,
+.form-control:active,
+.form-control:focus,
+.form-control:focus:active {
+    max-width: 19rem;
+    background-color: rgba(48,48,48,1.00);
+    border: 0px;
+    margin: 24px 0 24px;
+    color: white;
+}
+
+.about {
+    margin: 24px 0 24px;
+    color: white;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+

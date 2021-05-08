@@ -8,38 +8,35 @@
         <title>gites</title>
     </head>
 
-    <style>
-        .image {
-          font-size: 35px;
-        }
-    </style>
-
     <body ng-controller="EmojiController as emControl">
 
-<!--    <div  class="container mt-4">-->
-<!--        <div class="row">-->
-<!--            <div ng-repeat="emoji in emControl.emojis" class="col-auto mb-3">-->
-<!--                <div class="card" style="width: 20rem;">-->
-<!--                    <div class="card-img-top d-flex align-items-center bg-light">-->
-<!--                        <h5 class="card-title">{{emoji.image}}</h5>-->
-<!--                        <p class="card-text">:{{emoji.id}}:</br>{{emoji.hex}}</br>{{emoji.dec}}</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
+        <header>
+            <div class="navbar navbar-dark bg-dark shadow-sm">
+                <div class="container d-flex justify-content-between">
+                    <h1 class="navbar-brand d-flex align-items-center">
+                        gites 👍
+                    </h1>
+                </div>
+            </div>
+        </header>
 
-    <div  class="container mt-4">
-        <div class="row">
-            <div ng-repeat="emoji in emControl.emojis" class="col-auto mb-3">
-                <div class="card" style="width: 20rem;">
+        <div class="container">
+            <h5 class="about">
+                Improve your git commits with emojis.
+                Inspired by the <a href="https://gitmoji.dev/">gitmoji</a> project.
+            </h5>
+            <div>
+                <input type="text" class="form-control" placeholder="Search emoji by tag">
+            </div>
+            <div class="row">
+                <div ng-cloak ng-repeat="emoji in emControl.emojis" class="col-auto mb-3">
                     <div class="card flex-row flex-wrap">
-                        <div class="card-header text-center border-0" style="width: 6rem;">
+                        <div class="card-header text-center rounded">
                             <h1 class="card-title">{{emoji.image}}</h1>
                         </div>
-                        <div class="card-block px-2">
+                        <div class="card-block px-3">
                             <p class="card-text">
-                                :{{emoji.id}}:</br>
+                                <strong>:{{emoji.id}}:</strong></br>
                                 hex: {{emoji.hex}}</br>
                                 dec: {{emoji.dec}}
                             </p>
@@ -48,26 +45,24 @@
                 </div>
             </div>
         </div>
-    </div>
 
+        <footer class="footer text-center text-white fixed-bottom">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2021 Copyright:
+                <a class="text-white" href="https://sokolak.wixsite.com/sokolak?lang=en">SokolAK</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
 
-<!--        <ul>-->
-<!--            <li ng-repeat="emoji in emControl.emojis">-->
-<!--                <dev>-->
-<!--                    <span class="image">{{emoji.image}}</span></br>-->
-<!--                    name:       :{{emoji.id}}:</br>-->
-<!--                    hex:        {{emoji.hex}}</br>-->
-<!--                    dec:        {{emoji.dec}}</br>-->
-<!--                    categories: <span ng-repeat="category in emoji.categories">{{category.id}}{{$last ? '' : ', '}}</span></br>-->
-<!--                    tags:       <span ng-repeat="tag in emoji.tags">{{tag.id}}{{$last ? '' : ', '}}</span>-->
-<!--                </dev>-->
-<!--            </li>-->
-<!--        </ul>-->
 
         <script type="text/javascript" src="js/lib/angular/angular.js"></script>
         <script type="text/javascript" src="js/lib/angular-resource/angular-resource.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
-        <script src="js/lib/bootstrap.min.js"></script>
+
+        <script src="js/lib/bootstrap/assets/js/vendor/popper.min.js"></script>
+        <script src="js/lib/bootstrap/bootstrap.min.js"></script>
+        <script src="../../assets/js/vendor/holder.min.js"></script>
     </body>
 
 </html>
