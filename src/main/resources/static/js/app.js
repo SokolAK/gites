@@ -1,22 +1,29 @@
 angular.module('app', ['ngResource'])
- .controller('EmojiController', function($resource) {
+ .controller('EmojiController', function($scope, $resource) {
  	let vm = this;
  	let Emoji = $resource('api/emojis');
 
-//    function setImages(element, index, array) {
-//        element.img = String.fromCodePoint(parseInt(element.hex, 16));
-//    }
 
- 	function refreshData() {
- 		vm.emojis = Emoji.query(
-            function success(data, headers) {
-                //data.forEach(setImages)
-            },
-            function error(response) {
-                console.log(response.status);
-        });
+    success = function(data, headers) {
+        //data.forEach(setImages)
+    }
+    error = function(response) {
+        console.log(response.status);
+    }
 
+ 	refreshData = function() {
+ 		vm.emojis = Emoji.query(success, error);
+ 	}
+
+ 	$scope.search = function() {
+ 	    if($scope.inputText) {
+            let tags = $scope.inputText.split(" ");
+            vm.emojis = Emoji.query({'tags':tags}, success, error);
+ 		} else {
+ 		    refreshData();
+        }
  	}
 
  	refreshData();
+
  });

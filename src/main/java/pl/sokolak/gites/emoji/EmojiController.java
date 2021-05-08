@@ -4,10 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
@@ -22,9 +19,17 @@ public class EmojiController {
     @Autowired
     private EmojiService emojiService;
 
-    @GetMapping
-    private List<Emoji> getEmojis() {
-        return emojiService.list();
+//    @GetMapping
+//    private List<Emoji> getEmojis() {
+//        return emojiService.list();
+//    }
+
+    @GetMapping()
+    private List<Emoji> getEmoji(@RequestParam(name = "tags", required = false) List<String> tagStrings) {
+        if(tagStrings == null) {
+            return emojiService.getAll();
+        }
+        return emojiService.findByTagsStrings(tagStrings);
     }
 
     @GetMapping("/{id}")

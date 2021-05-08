@@ -1,0 +1,272 @@
+﻿[
+  {
+    "image": "🐛",
+    "id": "bug",
+    "hex": "1F41B",
+    "dec": "128027",
+    "categories": [
+      "animals"
+    ],
+    "tags": [
+      "bug",
+      "error",
+      "problem",
+      "fix",
+      "repair"
+    ]
+  },
+  {
+    "image": "✨️",
+    "id": "sparkles",
+    "hex": "2728",
+    "dec": "10024",
+    "categories": [
+      "symbols"
+    ],
+    "tags": [
+      "new",
+      "feature"
+    ]
+  },
+  {
+    "image": "🔨",
+    "id": "hammer",
+    "hex": "1F528",
+    "dec": "128296",
+    "categories": [
+      "tools",
+      "symbols"
+    ],
+    "tags": [
+      "work",
+      "chore",
+      "fix",
+      "refactor",
+      "repair"
+    ]
+  },
+  {
+    "image": "🛠️",
+    "id": "hammer_and_wrench",
+    "hex": "FE0F",
+    "dec": "128736",
+    "categories": [
+      "symbols",
+      "tools"
+    ],
+    "tags": [
+      "work",
+      "chore",
+      "repair",
+      "fix",
+      "configuration",
+      "config"
+    ]
+  },
+  {
+    "image": "📚",
+    "id": "books",
+    "hex": "1F4DA",
+    "dec": "128218",
+    "categories": [
+      "symbols",
+      "paper"
+    ],
+    "tags": [
+      "doc",
+      "docs",
+      "documentation",
+      "manual",
+      "guide",
+      "book",
+      "books"
+    ]
+  },
+  {
+    "image": "📗",
+    "id": "green_book",
+    "hex": "1F4D7",
+    "dec": "128215",
+    "categories": [
+      "symbols",
+      "paper"
+    ],
+    "tags": [
+      "doc",
+      "docs",
+      "documentation",
+      "manual",
+      "guide",
+      "book",
+      "books"
+    ]
+  },
+  {
+    "image": "📕",
+    "id": "closed_book",
+    "hex": "1F4D5",
+    "dec": "128213",
+    "categories": [
+      "symbols",
+      "paper"
+    ],
+    "tags": [
+      "doc",
+      "docs",
+      "documentation",
+      "manual",
+      "guide",
+      "book",
+      "books"
+    ]
+  },
+  {
+    "image": "📘",
+    "id": "blue_book",
+    "hex": "1F4D8",
+    "dec": "128216",
+    "categories": [
+      "symbols",
+      "paper"
+    ],
+    "tags": [
+      "doc",
+      "docs",
+      "documentation",
+      "manual",
+      "guide",
+      "book",
+      "books"
+    ]
+  },
+  {
+    "image": "📙",
+    "id": "orange_book",
+    "hex": "1F4D9",
+    "dec": "128217",
+    "categories": [
+      "symbols",
+      "paper"
+    ],
+    "tags": [
+      "doc",
+      "docs",
+      "documentation",
+      "manual",
+      "guide",
+      "book",
+      "books"
+    ]
+  },
+  {
+    "image": "🎉",
+    "id": "tada",
+    "hex": "1F389",
+    "dec": "127881",
+    "categories": [
+      "symbols"
+    ],
+    "tags": [
+      "init",
+      "start",
+      "success"
+    ]
+  },
+  {
+    "image": "✅️",
+    "id": "white_check_mark",
+    "hex": "2705",
+    "dec": "9989",
+    "categories": [
+      "symbols"
+    ],
+    "tags": [
+      "test",
+      "tests",
+      "testing"
+    ]
+  },
+  {
+    "image": "✔️",
+    "id": "heavy_check_mark",
+    "hex": "2714",
+    "dec": "10004",
+    "categories": [
+      "symbols"
+    ],
+    "tags": [
+      "test",
+      "tests",
+      "testing"
+    ]
+  },
+  {
+    "image": "🧪",
+    "id": "test_tube",
+    "hex": "1F9EA",
+    "dec": "129514",
+    "categories": [
+      "symbols"
+    ],
+    "tags": [
+      "test",
+      "tests",
+      "testing"
+    ]
+  },
+  {
+    "image": "🚦",
+    "id": "vertical_traffic_light",
+    "hex": "1F6A6",
+    "dec": "128678",
+    "categories": [
+      "symbols"
+    ],
+    "tags": [
+      "test",
+      "tests",
+      "testing"
+    ]
+  },
+  {
+    "image": "🐢",
+    "id": "turtle",
+    "hex": "1F422",
+    "dec": "128034",
+    "categories": [
+      "animals"
+    ],
+    "tags": [
+      "slow",
+	  "speed",
+      "performance"
+    ]
+  },
+  {
+    "image": "🐌",
+    "id": "snail",
+    "hex": "1F40C",
+    "dec": "128012",
+    "categories": [
+      "animals"
+    ],
+    "tags": [
+      "slow",
+	  "speed",
+      "performance"
+    ]
+  },
+  {
+    "image": "🙈",
+    "id": "see_no_evil",
+    "hex": "1F648",
+    "dec": "128584",
+    "categories": [
+      "animals"
+    ],
+    "tags": [
+      "gitignore",
+      "ignore"
+    ]
+  }
+]

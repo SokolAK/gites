@@ -6,10 +6,7 @@ import lombok.NoArgsConstructor;
 import pl.sokolak.gites.category.Category;
 import pl.sokolak.gites.tag.Tag;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,10 +22,12 @@ public class Emoji {
     private String image;
 
     @ManyToMany
+    @JoinTable(name = "emoji_category")
     @JsonIgnoreProperties("emojis")
     private List<Category> categories = new ArrayList<>();
 
     @ManyToMany(cascade = CascadeType.PERSIST)
+    @JoinTable(name = "emoji_tag")
     @JsonIgnoreProperties("emojis")
     private List<Tag> tags = new ArrayList<>();
 

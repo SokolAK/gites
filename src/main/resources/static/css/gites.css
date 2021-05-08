@@ -1,33 +1,40 @@
+:root {
+    --light-grey:   rgba(128,128,128,1.00);
+    --grey:         rgba(64,64,64,1.00);
+    --dark-grey:    rgba(48,48,48,1.00);
+    --yellow:       rgba(255,200,61,1.00);
+}
+
 html body {
-    background-color: rgba(64,64,64,1.00);
+    background-color: var(--grey);
 }
 
 .card {
-    background-color: rgba(48,48,48,1.00);
+    background-color: var(--dark-grey);
     border-radius: 5px !important;
     width: 19rem;
 }
 
 .card-header {
-    background-color: rgba(128,128,128,1.00);
+    background-color: var(--light-grey);
     border-radius: 5px 0 0 5px !important;
     width: 6rem;
 }
 
 .card-text {
-    color: rgba(255,255,255,1.00);
+    color: white;
 }
 
 .navbar-brand {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .navbar-dark {
-    background-color: rgba(48,48,48,1.00) !important;
+    background-color: var(--dark-grey) !important;
 }
 
 .footer {
-    background-color: rgba(48,48,48,1.00) !important;
+    background-color: var(--dark-grey) !important;
 }
 
 
@@ -36,16 +43,34 @@ html body {
 .form-control:focus,
 .form-control:focus:active {
     max-width: 19rem;
-    background-color: rgba(48,48,48,1.00);
-    border: 0px;
+    background-color: var(--dark-grey);
+    border: 2px solid var(--grey);
     margin: 24px 0 24px;
     color: white;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border: 2px solid var(--light-grey);
 }
 
 .about {
     margin: 24px 0 24px;
     color: white;
 }
+
+.emph {
+    font-weight: bold;
+    color: var(--yellow);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--yellow);
+}
+
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
