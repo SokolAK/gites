@@ -13,6 +13,10 @@ html body {
     background-color: var(--dark-grey);
     border-radius: 5px !important;
     width: 19rem;
+    transition: 1s;
+}
+.card:hover{
+    transform: scale(1.1);
 }
 
 .card-header {
@@ -20,13 +24,21 @@ html body {
     border-radius: 5px 0 0 5px !important;
     width: 6rem;
 }
+.card-title {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    font-size: 44px !important;
+}
 
 .card-text {
     color: white;
 }
 
 .navbar-brand {
-    font-size: 40px;
+    font-size: 48px;
+    color: var(--yellow) !important;
 }
 
 .navbar-dark {
@@ -62,6 +74,7 @@ html body {
 .emph {
     font-weight: bold;
     color: var(--yellow);
+    /* -webkit-text-stroke: 1px black; */
 }
 
 a:link,
@@ -71,8 +84,10 @@ a:active {
   color: var(--yellow);
 }
 
-
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
+
+
+
 

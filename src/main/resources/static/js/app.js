@@ -24,6 +24,37 @@ angular.module('app', ['ngResource'])
         }
  	}
 
+
+
+    copyToClipboard = function(el) {
+        navigator.clipboard.writeText(el)
+            .then(function() {
+                      let s = document.getElementById("snackbar");
+                      s.className = "show";
+                      setTimeout(function(){ s.className = s.className.replace("show", ""); }, 2000);
+
+
+
+                            element = document.getElementById(el);
+
+                            element.classList.remove("bounce");
+
+                            // -> triggering reflow /* The actual magic */
+                            // without this it wouldn't work. Try uncommenting the line and the transition won't be retriggered.
+                            element.offsetWidth = element.offsetWidth;
+
+                            // -> and re-adding the class
+                            element.classList.add("bounce");
+
+
+
+
+
+                 }, function() {}
+             );
+    }
+
+
  	refreshData();
 
  });

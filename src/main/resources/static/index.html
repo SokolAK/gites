@@ -4,7 +4,10 @@
     <head>
         <meta charset="utf-8">
         <link href="js/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
         <link href="css/gites.css" rel="stylesheet">
+        <link href="css/snackbar.css" rel="stylesheet">
+        <link href="css/bounce.css" rel="stylesheet">
 
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
@@ -27,27 +30,29 @@
         </header>
 
         <div class="container">
-            <h5 class="about">
+            <h4 class="about">
                 Improve your <span class="emph">git</span> commits with <span class="emph">e</span>moji<span class="emph">s</span>!
                 Inspired by the <a href="https://gitmoji.dev/">gitmoji</a> project.</br>
-            </h5>
-            <form>
-                <input type="text" class="form-control"
-                       placeholder="Search emoji by tag, e.g. fix, chore, doc"
-                       ng-change="search()"
-                       ng-model="inputText"
-                       ng-model-options="{debounce: 1000}"
-                >
-            </form>
+            </h4>
+            <p class="about">
+                Tip: click on the emoji image to copy it to the clipboard
+            </p>
+            <input type="text" class="form-control"
+                   placeholder="Search emoji by tag, e.g. fix, chore, doc"
+                   ng-change="search()"
+                   ng-model="inputText"
+                   ng-model-options="{debounce: 500}">
             <div class="row">
                 <div ng-cloak ng-repeat="emoji in emControl.emojis" class="col-auto mb-3">
                     <div class="card flex-row flex-wrap">
                         <div class="card-header text-center rounded">
-                            <h1 class="card-title">{{emoji.image}}</h1>
+                            <h1 class="card-title" id="{{emoji.image}}" onclick="copyToClipboard(this.id)">
+                                {{emoji.image}}
+                            </h1>
                         </div>
                         <div class="card-block px-3">
                             <p class="card-text">
-                                <strong>:{{emoji.id}}:</strong></br>
+                                <strong>:{{emoji.name}}:</strong></br>
                                 hex: {{emoji.hex}}</br>
                                 dec: {{emoji.dec}}
                             </p>
@@ -56,6 +61,8 @@
                 </div>
             </div>
         </div>
+
+        <div id="snackbar">Copied to the clipboard</div>
 
         <footer class="footer text text-white fixed-bottom">
             <div class="container d-flex justify-content-between">
