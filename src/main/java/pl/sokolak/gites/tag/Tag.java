@@ -7,10 +7,7 @@ import org.hibernate.annotations.NotFound;
 import org.hibernate.annotations.NotFoundAction;
 import pl.sokolak.gites.emoji.Emoji;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,15 +17,17 @@ import java.util.List;
 public class Tag {
 
     @Id
-    private String id;
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    private Long id;
+    private String name;
 
     @ManyToMany(mappedBy = "tags", fetch = FetchType.EAGER)
     @JsonIgnoreProperties("tags")
     @NotFound(action = NotFoundAction.IGNORE)
     List<Emoji> emojis = new ArrayList<>();
 
-    public Tag(String id) {
-        this.id = id;
+    public Tag(String name) {
+        this.name = name;
     }
 
     public void addEmoji(Emoji emoji) {

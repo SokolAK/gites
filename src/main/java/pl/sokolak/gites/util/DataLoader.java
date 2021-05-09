@@ -11,6 +11,8 @@ import pl.sokolak.gites.emoji.Emoji;
 import pl.sokolak.gites.emoji.EmojiService;
 
 import java.io.File;
+import java.net.URL;
+import java.util.Comparator;
 import java.util.List;
 
 @Component
@@ -26,8 +28,10 @@ public class DataLoader implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         if (populate) {
             ObjectMapper mapper = new ObjectMapper();
-            List<Emoji> emojis = mapper.readValue(new File("src/main/resources/data.json"), new TypeReference<>() {
-            });
+            //URL url = new URL("https://7521680b-4b85-40f2-bf3f-dd2ac91f400f.usrfiles.com/ugd/752168_405bc89b17994a54a75bd46bb746e8fc.txt");
+            //List<Emoji> emojis = mapper.readValue(url, new TypeReference<>() {});
+            List<Emoji> emojis = mapper.readValue(new File("src/main/resources/data.json"), new TypeReference<>() {});
+            //emojis.sort(Comparator.comparing(Emoji::getName));
             emojiService.save(emojis);
         }
     }

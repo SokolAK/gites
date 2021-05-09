@@ -2,7 +2,7 @@ package pl.sokolak.gites.emoji;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pl.sokolak.gites.category.CategoryService;
+import javax.transaction.Transactional;
 import pl.sokolak.gites.tag.Tag;
 import pl.sokolak.gites.tag.TagService;
 
@@ -16,17 +16,17 @@ import java.util.stream.Collectors;
 public class EmojiService {
 
     @Autowired
-    private pl.sokolak.gites.emoji.EmojiRepo emojiRepo;
-    @Autowired
-    private CategoryService categoryService;
+    private EmojiRepo emojiRepo;
+//    @Autowired
+//    private CategoryService categoryService;
     @Autowired
     private TagService tagService;
 
-    public List<pl.sokolak.gites.emoji.Emoji> getAll() {
+    public List<Emoji> getAll() {
         return emojiRepo.findAll();
     }
 
-    public Optional<pl.sokolak.gites.emoji.Emoji> findById(String id) {
+    public Optional<Emoji> findById(String id) {
         return emojiRepo.findById(id);
     }
 
@@ -37,13 +37,14 @@ public class EmojiService {
         return emojiRepo.findAllContainingTagPhrases(tags);
     }
 
-    public void save(List<pl.sokolak.gites.emoji.Emoji> emojis) {
-        for (pl.sokolak.gites.emoji.Emoji e : emojis)
+    public void save(List<Emoji> emojis) {
+        for (Emoji e : emojis)
             save(e);
     }
 
-    public void save(pl.sokolak.gites.emoji.Emoji emoji) {
-        categoryService.save(emoji.getCategories());
+    @Transactional
+    public void save(Emoji emoji) {
+//        categoryService.save(emoji.getCategories());
         tagService.save(emoji.getTags());
         emojiRepo.save(emoji);
     }
