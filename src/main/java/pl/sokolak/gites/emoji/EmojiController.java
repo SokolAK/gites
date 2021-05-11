@@ -25,7 +25,7 @@ public class EmojiController {
 //    }
 
     @GetMapping()
-    private List<Emoji> getEmoji(@RequestParam(name = "tags", required = false) List<String> tagStrings) {
+    private List<Emoji> getEmoji(@RequestParam(name = "tag", required = false) List<String> tagStrings) {
         if(tagStrings == null) {
             return emojiService.getAll();
         }

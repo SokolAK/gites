@@ -20,13 +20,12 @@ public class TagFilterImpl implements TagFilter {
     @SuppressWarnings("unchecked")
     public List<Emoji> findAllContainingTagPhrases(Set<Tag> tags) {
 
-        String row = "LOWER(STRING_AGG(t.name, ';'))";
+        String row = "CONCAT(LOWER(e.name), LOWER(STRING_AGG(t.name, ';')))";
 
         String conditions = tags.stream()
                 .map(Tag::getName)
                 .map(s -> row + " LIKE '%" + s + "%'")
                 .collect(Collectors.joining(" AND "));
-
 
         String subSql = """
                     SELECT e.name FROM Emoji e
