@@ -1,6 +1,11 @@
 spring:
   profiles.active: ${SPRING_ACTIVE_PROFILE}
 
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+
 ---
 
 spring:
@@ -13,21 +18,10 @@ spring:
 dataLoader:
   populate: true
   source: file
-  path: src/main/resources/data.json
-
----
-
-spring:
-  config.activate.on-profile: heroku-postgres
-  datasource:
-    url: jdbc:postgresql://ec2-79-125-30-28.eu-west-1.compute.amazonaws.com:5432/d1svkiflvvv87n
-    username: faemqiltwjxspm
-    password: 08f11afb1a387c3b09ba5895c2dde6b5e00676cc6ad23a7dd66d74f48111aae8
-    driverClassName: org.postgresql.Driver
-    initialization-mode: never
-  jpa:
-    hibernate.ddl-auto: update
-    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+  path:
+    animals: ${DATA_PATH_ANIMALS}
+    objects: ${DATA_PATH_OBJECTS}
+    symbols: ${DATA_PATH_SYMBOLS}
 
 ---
 
@@ -41,6 +35,23 @@ spring:
 dataLoader:
   populate: true
   source: url
-  path: https://7521680b-4b85-40f2-bf3f-dd2ac91f400f.usrfiles.com/ugd/752168_405bc89b17994a54a75bd46bb746e8fc.txt
+  path:
+    animals: ${DATA_PATH_ANIMALS}
+    objects: ${DATA_PATH_OBJECTS}
+    symbols: ${DATA_PATH_SYMBOLS}
+
+---
+
+spring:
+  config.activate.on-profile: heroku-postgres
+  datasource:
+    url: ENC(QtzYGz+W+T8DQZGQLyiCmEgQZJbwf3e+et8t+2O5E4gOYmN55FAhi+vbUdeigc3wEOZh+uhJMs5SNCqdyzRGyKrXcVMLTXjfxcBYDFt5vZQRU3OdY0e0CYTCgMwluBwg)
+    username: ENC(nAUPvNkaU9dXczqw4cvWPwsgqa/Ly/Nc)
+    password: ENC(Oa06AWuhLVL3zH5J+TjP1YLAw9nJccH+TXlkPvwaLx8D+sadebKuDit720cHWwFeWEfO2KZLAnmNAUbsW5hhqAvpyfm5kANYFA8spLjoCIc=)
+    driverClassName: org.postgresql.Driver
+    initialization-mode: never
+  jpa:
+    hibernate.ddl-auto: update
+    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
 
 ---

@@ -12,6 +12,7 @@ import pl.sokolak.gites.emoji.EmojiService;
 
 import java.io.File;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
@@ -23,16 +24,34 @@ public class DataLoader implements ApplicationRunner {
 
     @Value("${dataLoader.populate:false}")
     private boolean populate;
+    @Value("${dataLoader.source:''}")
+    private String source;
+    @Value("${dataLoader.path.animals:''}")
+    private String pathAnimals;
+    @Value("${dataLoader.path.objects:''}")
+    private String pathObjects;
+    @Value("${dataLoader.path.symbols:''}")
+    private String pathSymbols;
+
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
         if (populate) {
-            ObjectMapper mapper = new ObjectMapper();
-            //URL url = new URL("https://7521680b-4b85-40f2-bf3f-dd2ac91f400f.usrfiles.com/ugd/752168_405bc89b17994a54a75bd46bb746e8fc.txt");
-            //List<Emoji> emojis = mapper.readValue(url, new TypeReference<>() {});
-            List<Emoji> emojis = mapper.readValue(new File("src/main/resources/data.json"), new TypeReference<>() {});
-            //emojis.sort(Comparator.comparing(Emoji::getName));
-            emojiService.save(emojis);
+            emojiService.save(getEmojis(pathAnimals));
+            emojiService.save(getEmojis(pathObjects));
+            emojiService.save(getEmojis(pathSymbols));
         }
+    }
+
+    private List<Emoji> getEmojis(String path) throws Exception {
+        ObjectMapper mapper = new ObjectMapper();
+        List<Emoji> emojis = new ArrayList<>();
+        if(source.equals("file")) {
+            emojis = mapper.readValue(new File(path), new TypeReference<>() {});
+        }
+        if(source.equals("url")) {
+            emojis = mapper.readValue(new URL(path), new TypeReference<>() {});
+        }
+        return emojis;
     }
 }
