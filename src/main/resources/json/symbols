@@ -1,0 +1,217 @@
+﻿[
+  {
+    "image": "✅️",
+    "name": "white_check_mark",
+    "hex": "2705",
+    "dec": "9989",
+    "tags": [
+      "test",
+      "tests",
+      "testing"
+    ]
+  },
+  {
+    "image": "✔️",
+    "name": "heavy_check_mark",
+    "hex": "2714",
+    "dec": "10004",
+    "tags": [
+      "test",
+      "tests",
+      "testing"
+    ]
+  },
+  {
+    "image": "🚨",
+    "name": "rotating_light",
+    "hex": "1F6A8",
+    "dec": "128680",
+    "tags": [
+      "test",
+      "tests",
+      "testing"
+    ]
+  },
+  {
+    "image": "⚡",
+    "name": "zap",
+    "hex": "26A1",
+    "dec": "9889",
+    "tags": [
+      "update",
+      "general",
+      "breaking"
+    ]
+  },
+  {
+    "image": "🔥",
+    "name": "fire",
+    "hex": "1F52",
+    "dec": "128293",
+    "tags": [
+      "remove",
+      "delete",
+      "breaking"
+    ]
+  },
+  {
+    "image": "⬆️",
+    "name": "arrow_up",
+    "hex": "e232",
+    "dec": "57906",
+    "tags": [
+      "upgrade"
+    ]
+  },
+  {
+    "image": "⬇️",
+    "name": "arrow_down",
+    "hex": "e233",
+    "dec": "57907",
+    "tags": [
+      "downgrade"
+    ]
+  },
+  {
+    "image": "➕",
+    "name": "heavy_plus_sign",
+    "hex": "2795",
+    "dec": "10133",
+    "tags": [
+      "add",
+      "plus"
+    ]
+  },
+  {
+    "image": "➖",
+    "name": "heavy_minus_sign",
+    "hex": "2796",
+    "dec": "10134",
+    "tags": [
+      "remove",
+      "delete",
+      "minus"
+    ]
+  },
+  {
+    "image": "⏪",
+    "name": "rewind",
+    "hex": "23EA",
+    "dec": "9194",
+    "tags": [
+      "back",
+      "revert"
+    ]
+  },
+  {
+    "image": "💥",
+    "name": "boom",
+    "hex": "1F4A5",
+    "dec": "128165",
+    "tags": [
+      "breaking",
+      "changes",
+      "general"
+    ]
+  },
+  {
+    "image": "🔀",
+    "name": "twisted_rightwards_arrows",
+    "hex": "1F500",
+    "dec": "128256",
+    "tags": [
+      "merge",
+      "merging",
+      "branches"
+    ]
+  },
+  {
+    "image": "🆕",
+    "name": "new",
+    "hex": "1F195",
+    "dec": "127381",
+    "tags": [
+      "new"
+    ]
+  },
+  {
+    "image": "♿",
+    "name": "wheelchair",
+    "hex": "267F",
+    "dec": "9855",
+    "tags": [
+      "accessibility"
+    ]
+  },
+  {
+    "image": "👽",
+    "name": "alien",
+    "hex": "1F47D",
+    "dec": "128125",
+    "tags": [
+      "translation"
+    ]
+  },
+  {
+    "image": "🔊",
+    "name": "loud_sound",
+    "hex": "1F50A",
+    "dec": "128266",
+    "tags": [
+      "logging",
+      "logs"
+    ]
+  },
+  {
+    "image": "🔇",
+    "name": "mute",
+    "hex": "1F507",
+    "dec": "128263",
+    "tags": [
+      "logging",
+      "logs"
+    ]
+  },
+  {
+    "image": "🚱",
+    "name": "non-potable_water",
+    "hex": "1F6B1",
+    "dec": "128689",
+    "tags": [
+      "memory",
+      "leak"
+    ]
+  },
+  {
+    "image": "💩",
+    "name": "hankey",
+    "hex": "1F4A9",
+    "dec": "128169",
+    "tags": [
+      "bad",
+      "wrong",
+      "poor"
+    ]
+  },
+  {
+    "image": "♻",
+    "name": "recycle",
+    "hex": "267B",
+    "dec": "9851",
+    "tags": [
+      "refactor"
+    ]
+  },
+  {
+    "image": "🌐",
+    "name": "globe_with_meridians",
+    "hex": "1F310",
+    "dec": "127760",
+    "tags": [
+      "localization",
+      "internationalization",
+      "localisation",
+      "internationalisation"
+    ]
+  }
+]

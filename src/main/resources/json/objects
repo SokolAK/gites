@@ -1,0 +1,472 @@
+﻿[
+  {
+    "image": "🔨",
+    "name": "hammer",
+    "hex": "1F528",
+    "dec": "128296",
+    "tags": [
+      "work",
+      "chore",
+      "fix",
+      "refactor",
+      "repair"
+    ]
+  },
+  {
+    "image": "🛠️",
+    "name": "hammer_and_wrench",
+    "hex": "FE0F",
+    "dec": "128736",
+    "tags": [
+      "work",
+      "chore",
+      "repair",
+      "fix",
+      "configuration"
+    ]
+  },
+  {
+    "image": "🔧",
+    "name": "wrench",
+    "hex": "1F527",
+    "dec": "128295",
+    "tags": [
+      "work",
+      "chore",
+      "repair",
+      "fix",
+      "configuration"
+    ]
+  },
+  {
+    "image": "⚙",
+    "name": "gear",
+    "hex": "2699",
+    "dec": "9881",
+    "tags": [
+      "configuration"
+    ]
+  },
+  {
+    "image": "📚",
+    "name": "books",
+    "hex": "1F4DA",
+    "dec": "128218",
+    "tags": [
+      "docs",
+      "documentation",
+      "manual",
+      "guide",
+      "books"
+    ]
+  },
+  {
+    "image": "📗",
+    "name": "green_book",
+    "hex": "1F4D7",
+    "dec": "128215",
+    "tags": [
+      "docs",
+      "documentation",
+      "manual",
+      "guide",
+      "books"
+    ]
+  },
+  {
+    "image": "📕",
+    "name": "closed_book",
+    "hex": "1F4D5",
+    "dec": "128213",
+    "tags": [
+      "docs",
+      "documentation",
+      "manual",
+      "guide",
+      "books"
+    ]
+  },
+  {
+    "image": "📘",
+    "name": "blue_book",
+    "hex": "1F4D8",
+    "dec": "128216",
+    "tags": [
+      "docs",
+      "documentation",
+      "manual",
+      "guide",
+      "books"
+    ]
+  },
+  {
+    "image": "📙",
+    "name": "orange_book",
+    "hex": "1F4D9",
+    "dec": "128217",
+    "tags": [
+      "docs",
+      "documentation",
+      "manual",
+      "guide",
+      "books"
+    ]
+  },
+  {
+    "image": "📖",
+    "name": "open_book",
+    "hex": "1F4D6",
+    "dec": "128214",
+    "tags": [
+      "docs",
+      "documentation",
+      "manual",
+      "guide",
+      "books"
+    ]
+  },
+  {
+    "image": "📓",
+    "name": "notebook",
+    "hex": "1F4D3",
+    "dec": "128211",
+    "tags": [
+      "docs",
+      "documentation",
+      "manual",
+      "guide",
+      "books"
+    ]
+  },
+  {
+    "image": "📒",
+    "name": "ledger",
+    "hex": "1F4D2",
+    "dec": "128210",
+    "tags": [
+      "docs",
+      "documentation",
+      "manual",
+      "guide",
+      "books"
+    ]
+  },
+  {
+    "image": "📝",
+    "name": "memo",
+    "hex": "1F4DD",
+    "dec": "128221",
+    "tags": [
+      "docs",
+      "documentation",
+      "instructions",
+      "manual",
+      "guide",
+      "notes"
+    ]
+  },
+  {
+    "image": "📜",
+    "name": "scroll",
+    "hex": "1F4DC",
+    "dec": "128220",
+    "tags": [
+      "docs",
+      "documentation",
+      "instructions",
+      "manual",
+      "guide",
+      "notes"
+    ]
+  },
+  {
+    "image": "📄",
+    "name": "page_facing_up",
+    "hex": "1F4C4",
+    "dec": "128196",
+    "tags": [
+      "docs",
+      "documentation",
+      "instructions",
+      "manual",
+      "guide",
+      "notes",
+      "page",
+      "site"
+    ]
+  },
+  {
+    "image": "📃",
+    "name": "page_with_curl",
+    "hex": "1F4C3",
+    "dec": "128195",
+    "tags": [
+      "docs",
+      "documentation",
+      "instructions",
+      "manual",
+      "guide",
+      "notes",
+      "page",
+      "site"
+    ]
+  },
+  {
+    "image": "📰",
+    "name": "newspaper",
+    "hex": "1F4F0",
+    "dec": "128240",
+    "tags": [
+      "page",
+      "site"
+    ]
+  },
+  {
+    "image": "📋",
+    "name": "clipboard",
+    "hex": "1F4CB",
+    "dec": "128203",
+    "tags": [
+      "docs",
+      "documentation",
+      "instructions",
+      "manual",
+      "notes",
+      "guide"
+    ]
+  },
+  {
+    "image": "🎉",
+    "name": "tada",
+    "hex": "1F389",
+    "dec": "127881",
+    "tags": [
+      "init",
+      "start",
+      "success"
+    ]
+  },
+  {
+    "image": "💎",
+    "name": "gem",
+    "hex": "1F48E",
+    "dec": "128142",
+    "tags": [
+      "version",
+      "release",
+      "new"
+    ]
+  },
+  {
+    "image": "🧪",
+    "name": "test_tube",
+    "hex": "1F9EA",
+    "dec": "129514",
+    "tags": [
+      "tests",
+      "testing"
+    ]
+  },
+  {
+    "image": "🚦",
+    "name": "vertical_traffic_light",
+    "hex": "1F6A6",
+    "dec": "128678",
+    "tags": [
+      "tests",
+      "testing"
+    ]
+  },
+  {
+    "image": "🚀",
+    "name": "rocket",
+    "hex": "1F680",
+    "dec": "128640",
+    "tags": [
+      "deploy",
+      "speed",
+      "fast",
+      "performance"
+    ]
+  },
+  {
+    "image": "🎨",
+    "name": "art",
+    "hex": "1F3A8",
+    "dec": "127912",
+    "tags": [
+      "frontend",
+      "graphics",
+      "design",
+      "art"
+    ]
+  },
+  {
+    "image": "🔖",
+    "name": "bookmark",
+    "hex": "1F516",
+    "dec": "128278",
+    "tags": [
+      "version",
+      "label",
+      "tag"
+    ]
+  },
+  {
+    "image": "🏷",
+    "name": "label",
+    "hex": "1F3F7",
+    "dec": "127991",
+    "tags": [
+      "version",
+      "label",
+      "tag"
+    ]
+  },
+  {
+    "image": "📇",
+    "name": "card_index",
+    "hex": "1F4C7",
+    "dec": "128199",
+    "tags": [
+      "metadata"
+    ]
+  },
+  {
+    "image": "💄",
+    "name": "lipstick",
+    "hex": "1F484",
+    "dec": "128132",
+    "tags": [
+      "cosmetic"
+    ]
+  },
+  {
+    "image": "🔒",
+    "name": "lock",
+    "hex": "1F512",
+    "dec": "128274",
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "image": "⚰",
+    "name": "coffin",
+    "hex": "26B0",
+    "dec": "9904",
+    "tags": [
+      "dead"
+    ]
+  },
+  {
+    "image": "📦",
+    "name": "package",
+    "hex": "1F4E6",
+    "dec": "128230",
+    "tags": [
+      "package",
+      "deploy"
+    ]
+  },
+  {
+    "image": "🚧",
+    "name": "construction",
+    "hex": "1F6A7",
+    "dec": "128679",
+    "tags": [
+      "construction",
+      "work",
+      "progress"
+    ]
+  },
+  {
+    "image": "🍎",
+    "name": "apple",
+    "hex": "1F34E",
+    "dec": "127822",
+    "tags": [
+      "macos",
+      "ios"
+    ]
+  },
+  {
+    "image": "🏁",
+    "name": "checkered_flag",
+    "hex": "1F3C1",
+    "dec": "127937",
+    "tags": [
+      "windows"
+    ]
+  },
+  {
+    "image": "🤖",
+    "name": "robot",
+    "hex": "1F916",
+    "dec": "129302",
+    "tags": [
+      "android"
+    ]
+  },
+  {
+    "image": "🚑",
+    "name": "ambulance",
+    "hex": "1F691",
+    "dec": "128657",
+    "tags": [
+      "hotfix",
+      "critical",
+      "emergency"
+    ]
+  },
+  {
+    "image": "🚒",
+    "name": "fire_engine",
+    "hex": "1F692",
+    "dec": "128658",
+    "tags": [
+      "hotfix",
+      "critical",
+      "emergency"
+    ]
+  },
+  {
+    "image": "👕",
+    "name": "shirt",
+    "hex": "1F455",
+    "dec": "128085",
+    "tags": [
+      "lint"
+    ]
+  },
+  {
+    "image": "📡",
+    "name": "satellite",
+    "hex": "1F4E1",
+    "dec": "128225",
+    "tags": [
+      "instrumentations",
+      "metrics"
+    ]
+  },
+  {
+    "image": "🍺",
+    "name": "beer",
+    "hex": "1F37A",
+    "dec": "127866",
+    "tags": [
+      "alcohol",
+      "drunk"
+    ]
+  },
+  {
+    "image": "🗑️",
+    "name": "wastebasket",
+    "hex": "1F5D1",
+    "dec": "128465",
+    "tags": [
+      "garbage",
+      "trash"
+    ]
+  }
+]

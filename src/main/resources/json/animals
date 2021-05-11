@@ -1,0 +1,89 @@
+﻿[
+  {
+    "image": "🐛",
+    "name": "bug",
+    "hex": "1F41B",
+    "dec": "128027",
+    "tags": [
+      "bug",
+      "error",
+      "problem",
+      "fix",
+      "repair"
+    ]
+  },
+  {
+    "image": "🐞",
+    "name": "beetle",
+    "hex": "1F41E",
+    "dec": "128030",
+    "tags": [
+      "bug",
+      "error",
+      "problem",
+      "fix",
+      "repair"
+    ]
+  },
+  {
+    "image": "🙈",
+    "name": "see_no_evil",
+    "hex": "1F648",
+    "dec": "128584",
+    "tags": [
+      "gitignore",
+      "ignore"
+    ]
+  },
+  {
+    "image": "🐆",
+    "name": "leopard",
+    "hex": "1F406",
+    "dec": "128006",
+    "tags": [
+      "speed",
+      "fast",
+      "performance"
+    ]
+  },
+  {
+    "image": "🐎",
+    "name": "racehorse",
+    "hex": "1F40E",
+    "dec": "128014",
+    "tags": [
+      "speed",
+      "fast",
+      "performance"
+    ]
+  },
+  {
+    "image": "🏇",
+    "name": "horse_racing",
+    "hex": "1F3C7",
+    "dec": "127943",
+    "tags": [
+      "speed",
+      "fast",
+      "performance"
+    ]
+  },
+  {
+    "image": "🐧",
+    "name": "penguin",
+    "hex": "1F427",
+    "dec": "128039",
+    "tags": [
+      "linux"
+    ]
+  },
+  {
+    "image": "🐳",
+    "name": "whale",
+    "hex": "1F433",
+    "dec": "128051",
+    "tags": [
+      "docker"
+    ]
+  }
+]
