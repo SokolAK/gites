@@ -22,7 +22,7 @@ html body {
 .card-header {
     background-color: var(--light-grey);
     border-radius: 5px 0 0 5px !important;
-    width: 6rem;
+    width: 5rem;
 }
 .card-title {
     -webkit-user-select: none; /* Safari */
@@ -36,9 +36,17 @@ html body {
     color: white;
 }
 
-.navbar-brand {
+.brand-name {
     font-size: 48px;
+    text-shadow: 3px 3px 3px black, 3px -3px 3px black, -3px 3px 3px black, -3px -3px 3px black, 3px 0 3px black, -3px 0 3px black, 0 3px 3px black, 0 -3px 3px black;
     color: var(--yellow) !important;
+}
+.brand-icon {
+    font-size: 48px;
+}
+
+.logo {
+    height: 64px;
 }
 
 .navbar-dark {

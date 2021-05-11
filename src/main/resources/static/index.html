@@ -9,10 +9,10 @@
         <link href="css/snackbar.css" rel="stylesheet">
         <link href="css/bounce.css" rel="stylesheet">
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
-        <link rel="manifest" href="/favicon_io/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/favicon/site.webmanifest">
 
         <title>gites</title>
     </head>
@@ -22,9 +22,10 @@
         <header>
             <div class="navbar navbar-dark bg-dark shadow-sm">
                 <div class="container d-flex justify-content-between">
-                    <h1 class="navbar-brand d-flex align-items-center">
-                        gites 👍
-                    </h1>
+<!--                    <div class="d-inline">-->
+<!--                        <span class="brand-name">gites</span><span class="brand-icon">👍</span>-->
+<!--                    </div>-->
+                    <img src="gites.png" class="logo">
                 </div>
             </div>
         </header>
@@ -32,7 +33,7 @@
         <div class="container">
             <h4 class="about">
                 Improve your <span class="emph">git</span> commits with <span class="emph">e</span>moji<span class="emph">s</span>!
-                Inspired by the <a href="https://gitmoji.dev/">gitmoji</a> project.</br>
+                Inspired by the <a href="https://gitmoji.dev/">gitmoji</a> initiative.</br>
             </h4>
             <p class="about">
                 Tip: click on the emoji image to copy it to the clipboard
@@ -43,16 +44,16 @@
                    ng-model="inputText"
                    ng-model-options="{debounce: 500}">
             <div class="row">
-                <div ng-cloak ng-repeat="emoji in emControl.emojis" class="col-auto mb-3">
+                <div ng-cloak ng-repeat="emoji in emControl.emojis" class="col-auto mb-3 px-2">
                     <div class="card flex-row flex-wrap">
-                        <div class="card-header text-center rounded">
+                        <div class="card-header mx-0 px-0 text-center rounded">
                             <h1 class="card-title" id="{{emoji.image}}" onclick="copyToClipboard(this.id)">
                                 {{emoji.image}}
                             </h1>
                         </div>
-                        <div class="card-block px-3">
+                        <div class="card-block px-2">
                             <p class="card-text">
-                                <strong>:{{emoji.name}}:</strong></br>
+                                :{{emoji.name}}:</br>
                                 hex: {{emoji.hex}}</br>
                                 dec: {{emoji.dec}}
                             </p>
