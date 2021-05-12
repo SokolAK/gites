@@ -2,7 +2,7 @@
 
 📖 gites -- (🇵🇱 *Polish, colloquial*) super, extra, great, excellent, wonderful
 
-👍[**gites**](https://sokolak-gites.herokuapp.com/) is an emoji repository that can help you to highlight purpose or intent of your [git](https://git-scm.com/) commits. The project inspired by the [gitmoji](https://gitmoji.dev/) initiative.
+👍[**gites**](https://sokolak.wixsite.com/gites) is an emoji repository that can help you to highlight purpose or intent of your [git](https://git-scm.com/) commits. The project inspired by the [gitmoji](https://gitmoji.dev/) initiative.
 
 
 
