@@ -33,3 +33,4 @@
 | `/api/emojis?tag={phrase1}&tag={phrase2}&...` | get emojis whose tag list contains the phrases `{phrase1}`, `{phrase2}`... |
 | `/api/tags`                                   | get all emoji tags                                           |
 | `/api/tags/{name}`                            | get the emoji tag named `{name}`                             |
+| `/api/status`                            		| returns code 200 if the application is running               |
