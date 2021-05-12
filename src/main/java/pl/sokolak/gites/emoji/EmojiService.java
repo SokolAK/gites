@@ -36,13 +36,18 @@ public class EmojiService {
     }
 
     public void save(List<Emoji> emojis) {
-        for (Emoji e : emojis)
+        for (Emoji e : emojis) {
             save(e);
+        }
     }
 
     @Transactional
     public void save(Emoji emoji) {
         tagService.save(emoji.getTags());
         emojiRepo.save(emoji);
+    }
+
+    public long count() {
+        return emojiRepo.count();
     }
 }

@@ -23,6 +23,9 @@ dataLoader:
     objects: ${DATA_PATH_OBJECTS}
     symbols: ${DATA_PATH_SYMBOLS}
 
+database:
+  delay: ${DATABASE_DELAY}
+
 ---
 
 spring:
@@ -39,6 +42,9 @@ dataLoader:
     animals: ${DATA_PATH_ANIMALS}
     objects: ${DATA_PATH_OBJECTS}
     symbols: ${DATA_PATH_SYMBOLS}
+
+database:
+  delay: ${DATABASE_DELAY}
 
 ---
 
