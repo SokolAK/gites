@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import pl.sokolak.gites.tag.Tag;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,17 +14,10 @@ import java.util.List;
 public class Emoji {
 
     @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private Long id;
     private String name;
     private String hex;
     private String dec;
     private String image;
-
-//    @ManyToMany
-//    @JoinTable(name = "emoji_category")
-//    @JsonIgnoreProperties("emojis")
-//    private List<Category> categories = new ArrayList<>();
 
     @ManyToMany
     @JoinTable(name = "emoji_tag")
@@ -39,12 +31,4 @@ public class Emoji {
         this.dec = dec;
         this.image = image;
     }
-
-//    public void addCategory(Category category) {
-//        categories.add(category);
-//    }
-//
-//    public void removeCategory(Category category) {
-//        categories.remove(category);
-//    }
 }

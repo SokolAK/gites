@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.NotFound;
 import org.hibernate.annotations.NotFoundAction;
 import pl.sokolak.gites.emoji.Emoji;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,8 +16,6 @@ import java.util.List;
 public class Tag {
 
     @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private Long id;
     private String name;
 
     @ManyToMany(mappedBy = "tags", fetch = FetchType.EAGER)

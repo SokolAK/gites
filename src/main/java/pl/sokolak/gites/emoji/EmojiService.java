@@ -17,8 +17,6 @@ public class EmojiService {
 
     @Autowired
     private EmojiRepo emojiRepo;
-//    @Autowired
-//    private CategoryService categoryService;
     @Autowired
     private TagService tagService;
 
@@ -44,7 +42,6 @@ public class EmojiService {
 
     @Transactional
     public void save(Emoji emoji) {
-//        categoryService.save(emoji.getCategories());
         tagService.save(emoji.getTags());
         emojiRepo.save(emoji);
     }

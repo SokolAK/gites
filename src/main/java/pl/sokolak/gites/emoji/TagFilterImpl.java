@@ -8,7 +8,6 @@ import javax.persistence.Query;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-import java.util.StringJoiner;
 import java.util.stream.Collectors;
 
 public class TagFilterImpl implements TagFilter {
