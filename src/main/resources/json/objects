@@ -468,5 +468,15 @@
       "garbage",
       "trash"
     ]
+  },
+  {
+	"image": "🗃️",
+	"name": "card_file_box",
+	"hex": "1F5C3",
+	"dec": "128451",
+	"tags": [
+	  "database",
+	  "documents"
+	]
   }
 ]

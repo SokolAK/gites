@@ -38,11 +38,11 @@ public class EmojiController {
         return emoji.map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
     }
 
-    @GetMapping("/populate")
-    private void populate(HttpServletResponse response) throws IOException {
-        ObjectMapper mapper = new ObjectMapper();
-        List<Emoji> emojis = mapper.readValue(new File("src/main/resources/data.json"), new TypeReference<>() {});
-        emojiService.save(emojis);
-        response.sendRedirect("/api/emojis");
-    }
+//    @GetMapping("/populate")
+//    private void populate(HttpServletResponse response) throws IOException {
+//        ObjectMapper mapper = new ObjectMapper();
+//        List<Emoji> emojis = mapper.readValue(new File("src/main/resources/data.json"), new TypeReference<>() {});
+//        emojiService.save(emojis);
+//        response.sendRedirect("/api/emojis");
+//    }
 }
