@@ -6,20 +6,25 @@ angular.module('app', ['ngResource']).controller('EmojiController', function($sc
         //data.forEach(setImages)
     }
     error = function(response) {
-        console.log(response.status);
+        //console.log(response.status);
     }
 
- 	refreshData = function() {
+ 	getAll = function() {
  		vm.emojis = Emoji.query(success, error);
  	}
 
- 	$scope.search = function() {
- 	    if($scope.inputText) {
-            let tags = $scope.inputText.split(" ");
-            vm.emojis = Emoji.query({'tag':tags}, success, error);
- 		} else {
- 		    refreshData();
+ 	$scope.searchByTag = function() {
+        let input = $scope.inputText;
+        if(input) {
+            let tags = input.split(" ");
+            search(tags);
+        } else {
+            getAll();
         }
+ 	}
+
+ 	search = function(values) {
+ 	    vm.emojis = Emoji.query({'tag':values}, success, error);
  	}
 
     copyToClipboard = function(el) {
@@ -41,7 +46,6 @@ angular.module('app', ['ngResource']).controller('EmojiController', function($sc
              );
     }
 
-
- 	refreshData();
+ 	getAll();
 
  });

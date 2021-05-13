@@ -22,7 +22,7 @@
         <header>
             <div class="navbar navbar-dark bg-dark shadow-sm">
                 <div class="container d-flex justify-content-between">
-                    <img src="gites.png" class="logo">
+                    <a href="/"><img src="gites.png" class="logo"></a>
                 </div>
             </div>
         </header>
@@ -35,11 +35,29 @@
             <p class="about">
                 Tip: click on the emoji image to copy it to the clipboard
             </p>
-            <input type="text" class="form-control"
-                   placeholder="Search emoji by tag, e.g. fix, chore, doc"
-                   ng-change="search()"
-                   ng-model="inputText"
-                   ng-model-options="{debounce: 500}">
+
+
+            <div class="row">
+                <div class="col-auto px-2 flex-row flex-wrap">
+                    <input type="text" class="form-control"
+                           placeholder="Search emoji by tag, e.g. fix, chore, doc"
+                           ng-change="searchByTag()"
+                           ng-model="inputText"
+                           ng-model-options="{debounce: 500}">
+                </div>
+                <div class="col-auto mt-4 px-2 flex-row flex-wrap">
+                    <button type="button" class="btn btn-category" onclick="search(['animals'])">Animals</button>
+                </div>
+                <div class="col-auto mt-4 px-2 flex-row flex-wrap">
+                    <button type="button" class="btn btn-category" onclick="search(['objects'])">Objects</button>
+                </div>
+                <div class="col-auto mt-4 px-2 flex-row flex-wrap">
+                    <button type="button" class="btn btn-category" onclick="search(['symbols'])">Symbols</button>
+                </div>
+            </div>
+
+
+
             <div class="row">
                 <div ng-cloak ng-repeat="emoji in emControl.emojis" class="col-auto mb-3 px-2">
                     <div class="card flex-row flex-wrap">
