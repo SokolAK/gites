@@ -1,6 +1,7 @@
 :root {
     --light-grey:   rgba(128,128,128,1.00);
     --grey:         rgba(64,64,64,1.00);
+    --mid-grey:     rgba(56,56,56,1.00);
     --dark-grey:    rgba(48,48,48,1.00);
     --yellow:       rgba(255,200,61,1.00);
 }
@@ -21,11 +22,14 @@ html body {
 .card {
     background-color: var(--dark-grey);
     border-radius: 5px !important;
+    border: 0 !important;
     width: 19rem;
     transition: 1s;
+    background-color: var(--dark-grey);
 }
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    background-color: var(--mid-grey);
 }
 
 .card-header {

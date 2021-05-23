@@ -9,9 +9,12 @@
         <link href="css/snackbar.css" rel="stylesheet">
         <link href="css/bounce.css" rel="stylesheet">
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<!--        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">-->
+<!--        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">-->
+<!--        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">-->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
         <link rel="manifest" href="/favicon/site.webmanifest">
 
         <title>gites</title>
@@ -39,19 +42,19 @@
 
             <div class="row">
                 <div class="col-auto px-2 flex-row flex-wrap">
-                    <input type="text" class="form-control"
+                    <input type="text" class="form-control mb-3 mt-0"
                            placeholder="Search emoji by tag, e.g. fix, chore, doc"
                            ng-change="searchByTag()"
                            ng-model="inputText"
                            ng-model-options="{debounce: 500}">
                 </div>
-                <div class="col-auto mt-4 px-2 flex-row flex-wrap">
+                <div class="col-auto px-2 mb-3 flex-row flex-wrap">
                     <button type="button" class="btn btn-category" onclick="search(['animals'])">Animals</button>
                 </div>
-                <div class="col-auto mt-4 px-2 flex-row flex-wrap">
+                <div class="col-auto px-2 mb-3 flex-row flex-wrap">
                     <button type="button" class="btn btn-category" onclick="search(['objects'])">Objects</button>
                 </div>
-                <div class="col-auto mt-4 px-2 flex-row flex-wrap">
+                <div class="col-auto px-2 mb-3 flex-row flex-wrap">
                     <button type="button" class="btn btn-category" onclick="search(['symbols'])">Symbols</button>
                 </div>
             </div>

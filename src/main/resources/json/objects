@@ -5,6 +5,7 @@
     "hex": "1F528",
     "dec": "128296",
     "tags": [
+	  "objects",
       "work",
       "chore",
       "fix",
@@ -18,6 +19,7 @@
     "hex": "FE0F",
     "dec": "128736",
     "tags": [
+	  "objects",
       "work",
       "chore",
       "repair",
@@ -31,6 +33,7 @@
     "hex": "1F527",
     "dec": "128295",
     "tags": [
+	  "objects",
       "work",
       "chore",
       "repair",
@@ -44,6 +47,7 @@
     "hex": "2699",
     "dec": "9881",
     "tags": [
+	  "objects",
       "configuration"
     ]
   },
@@ -53,6 +57,7 @@
     "hex": "1F4DA",
     "dec": "128218",
     "tags": [
+	  "objects",
       "docs",
       "documentation",
       "manual",
@@ -66,6 +71,7 @@
     "hex": "1F4D7",
     "dec": "128215",
     "tags": [
+	  "objects",
       "docs",
       "documentation",
       "manual",
@@ -79,6 +85,7 @@
     "hex": "1F4D5",
     "dec": "128213",
     "tags": [
+	  "objects",
       "docs",
       "documentation",
       "manual",
@@ -92,6 +99,7 @@
     "hex": "1F4D8",
     "dec": "128216",
     "tags": [
+	  "objects",
       "docs",
       "documentation",
       "manual",
@@ -105,6 +113,7 @@
     "hex": "1F4D9",
     "dec": "128217",
     "tags": [
+	  "objects",
       "docs",
       "documentation",
       "manual",
@@ -118,6 +127,7 @@
     "hex": "1F4D6",
     "dec": "128214",
     "tags": [
+	  "objects",
       "docs",
       "documentation",
       "manual",
@@ -131,6 +141,7 @@
     "hex": "1F4D3",
     "dec": "128211",
     "tags": [
+	  "objects",
       "docs",
       "documentation",
       "manual",
@@ -144,6 +155,7 @@
     "hex": "1F4D2",
     "dec": "128210",
     "tags": [
+	  "objects",
       "docs",
       "documentation",
       "manual",
@@ -157,6 +169,7 @@
     "hex": "1F4DD",
     "dec": "128221",
     "tags": [
+	  "objects",
       "docs",
       "documentation",
       "instructions",
@@ -171,6 +184,7 @@
     "hex": "1F4DC",
     "dec": "128220",
     "tags": [
+	  "objects",
       "docs",
       "documentation",
       "instructions",
@@ -185,6 +199,7 @@
     "hex": "1F4C4",
     "dec": "128196",
     "tags": [
+	  "objects",
       "docs",
       "documentation",
       "instructions",
@@ -192,7 +207,8 @@
       "guide",
       "notes",
       "page",
-      "site"
+      "site",
+	  "license"
     ]
   },
   {
@@ -201,6 +217,7 @@
     "hex": "1F4C3",
     "dec": "128195",
     "tags": [
+	  "objects",
       "docs",
       "documentation",
       "instructions",
@@ -208,7 +225,8 @@
       "guide",
       "notes",
       "page",
-      "site"
+      "site",
+	  "license"
     ]
   },
   {
@@ -217,6 +235,7 @@
     "hex": "1F4F0",
     "dec": "128240",
     "tags": [
+	  "objects",
       "page",
       "site"
     ]
@@ -227,6 +246,7 @@
     "hex": "1F4CB",
     "dec": "128203",
     "tags": [
+	  "objects",
       "docs",
       "documentation",
       "instructions",
@@ -241,6 +261,7 @@
     "hex": "1F389",
     "dec": "127881",
     "tags": [
+	  "objects",
       "init",
       "start",
       "success"
@@ -252,6 +273,7 @@
     "hex": "1F48E",
     "dec": "128142",
     "tags": [
+	  "objects",
       "version",
       "release",
       "new"
@@ -263,6 +285,7 @@
     "hex": "1F9EA",
     "dec": "129514",
     "tags": [
+	  "objects",
       "tests",
       "testing"
     ]
@@ -273,6 +296,7 @@
     "hex": "1F6A6",
     "dec": "128678",
     "tags": [
+	  "objects",
       "tests",
       "testing"
     ]
@@ -283,6 +307,7 @@
     "hex": "1F680",
     "dec": "128640",
     "tags": [
+	  "objects",
       "deploy",
       "speed",
       "fast",
@@ -295,6 +320,7 @@
     "hex": "1F3A8",
     "dec": "127912",
     "tags": [
+	  "objects",
       "frontend",
       "graphics",
       "design",
@@ -307,6 +333,7 @@
     "hex": "1F516",
     "dec": "128278",
     "tags": [
+	  "objects",
       "version",
       "label",
       "tag"
@@ -318,6 +345,7 @@
     "hex": "1F3F7",
     "dec": "127991",
     "tags": [
+	  "objects",
       "version",
       "label",
       "tag"
@@ -329,6 +357,7 @@
     "hex": "1F4C7",
     "dec": "128199",
     "tags": [
+	  "objects",
       "metadata"
     ]
   },
@@ -338,6 +367,7 @@
     "hex": "1F484",
     "dec": "128132",
     "tags": [
+	  "objects",
       "cosmetic"
     ]
   },
@@ -347,6 +377,7 @@
     "hex": "1F512",
     "dec": "128274",
     "tags": [
+	  "objects",
       "security"
     ]
   },
@@ -356,6 +387,7 @@
     "hex": "26B0",
     "dec": "9904",
     "tags": [
+	  "objects",
       "dead"
     ]
   },
@@ -365,6 +397,7 @@
     "hex": "1F4E6",
     "dec": "128230",
     "tags": [
+	  "objects",
       "package",
       "deploy"
     ]
@@ -375,6 +408,7 @@
     "hex": "1F6A7",
     "dec": "128679",
     "tags": [
+	  "objects",
       "construction",
       "work",
       "progress"
@@ -386,6 +420,7 @@
     "hex": "1F34E",
     "dec": "127822",
     "tags": [
+	  "objects",
       "macos",
       "ios"
     ]
@@ -396,6 +431,7 @@
     "hex": "1F3C1",
     "dec": "127937",
     "tags": [
+	  "objects",
       "windows"
     ]
   },
@@ -405,6 +441,7 @@
     "hex": "1F916",
     "dec": "129302",
     "tags": [
+	  "objects",
       "android"
     ]
   },
@@ -414,6 +451,7 @@
     "hex": "1F691",
     "dec": "128657",
     "tags": [
+	  "objects",
       "hotfix",
       "critical",
       "emergency"
@@ -425,6 +463,7 @@
     "hex": "1F692",
     "dec": "128658",
     "tags": [
+	  "objects",
       "hotfix",
       "critical",
       "emergency"
@@ -436,6 +475,7 @@
     "hex": "1F455",
     "dec": "128085",
     "tags": [
+	  "objects",
       "lint"
     ]
   },
@@ -445,6 +485,7 @@
     "hex": "1F4E1",
     "dec": "128225",
     "tags": [
+	  "objects",
       "instrumentations",
       "metrics"
     ]
@@ -455,6 +496,7 @@
     "hex": "1F37A",
     "dec": "127866",
     "tags": [
+	  "objects",
       "alcohol",
       "drunk"
     ]
@@ -465,6 +507,7 @@
     "hex": "1F5D1",
     "dec": "128465",
     "tags": [
+	  "objects",
       "garbage",
       "trash"
     ]
@@ -474,6 +517,16 @@
 	"name": "card_file_box",
 	"hex": "1F5C3",
 	"dec": "128451",
+	"tags": [
+	  "database",
+	  "documents"
+	]
+  },
+  {
+	"image": "🗄️",
+	"name": "file_cabinet",
+	"hex": "1F5C4",
+	"dec": "128452",
 	"tags": [
 	  "database",
 	  "documents"

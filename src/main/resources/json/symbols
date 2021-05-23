@@ -1,10 +1,22 @@
 ﻿[
   {
+    "image": "✨",
+    "name": "sparkles",
+    "hex": "2728",
+    "dec": "10024",
+    "tags": [
+	  "symbols",
+      "feature",
+	  "functionality"
+    ]
+  },
+  {
     "image": "✅️",
     "name": "white_check_mark",
     "hex": "2705",
     "dec": "9989",
     "tags": [
+	  "symbols",
       "test",
       "tests",
       "testing"
@@ -16,6 +28,7 @@
     "hex": "2714",
     "dec": "10004",
     "tags": [
+	  "symbols",
       "test",
       "tests",
       "testing"
@@ -27,6 +40,7 @@
     "hex": "1F6A8",
     "dec": "128680",
     "tags": [
+	  "symbols",
       "test",
       "tests",
       "testing"
@@ -38,6 +52,7 @@
     "hex": "26A1",
     "dec": "9889",
     "tags": [
+	  "symbols",
       "update",
       "general",
       "breaking"
@@ -49,6 +64,7 @@
     "hex": "1F52",
     "dec": "128293",
     "tags": [
+	  "symbols",
       "remove",
       "delete",
       "breaking"
@@ -60,6 +76,7 @@
     "hex": "e232",
     "dec": "57906",
     "tags": [
+	  "symbols",
       "upgrade"
     ]
   },
@@ -69,6 +86,7 @@
     "hex": "e233",
     "dec": "57907",
     "tags": [
+	  "symbols",
       "downgrade"
     ]
   },
@@ -78,6 +96,7 @@
     "hex": "2795",
     "dec": "10133",
     "tags": [
+	  "symbols",
       "add",
       "plus"
     ]
@@ -88,6 +107,7 @@
     "hex": "2796",
     "dec": "10134",
     "tags": [
+	  "symbols",
       "remove",
       "delete",
       "minus"
@@ -99,6 +119,7 @@
     "hex": "23EA",
     "dec": "9194",
     "tags": [
+	  "symbols",
       "back",
       "revert"
     ]
@@ -109,6 +130,7 @@
     "hex": "1F4A5",
     "dec": "128165",
     "tags": [
+	  "symbols",
       "breaking",
       "changes",
       "general"
@@ -120,6 +142,7 @@
     "hex": "1F500",
     "dec": "128256",
     "tags": [
+	  "symbols",
       "merge",
       "merging",
       "branches"
@@ -131,6 +154,7 @@
     "hex": "1F195",
     "dec": "127381",
     "tags": [
+	  "symbols",
       "new"
     ]
   },
@@ -140,6 +164,7 @@
     "hex": "267F",
     "dec": "9855",
     "tags": [
+	  "symbols",
       "accessibility"
     ]
   },
@@ -149,6 +174,7 @@
     "hex": "1F47D",
     "dec": "128125",
     "tags": [
+	  "symbols",
       "translation"
     ]
   },
@@ -158,6 +184,7 @@
     "hex": "1F50A",
     "dec": "128266",
     "tags": [
+	  "symbols",
       "logging",
       "logs"
     ]
@@ -168,6 +195,7 @@
     "hex": "1F507",
     "dec": "128263",
     "tags": [
+	  "symbols",
       "logging",
       "logs"
     ]
@@ -178,6 +206,7 @@
     "hex": "1F6B1",
     "dec": "128689",
     "tags": [
+	  "symbols",
       "memory",
       "leak"
     ]
@@ -188,6 +217,7 @@
     "hex": "1F4A9",
     "dec": "128169",
     "tags": [
+	  "symbols",
       "bad",
       "wrong",
       "poor"
@@ -199,6 +229,7 @@
     "hex": "267B",
     "dec": "9851",
     "tags": [
+	  "symbols",
       "refactor"
     ]
   },
@@ -208,6 +239,7 @@
     "hex": "1F310",
     "dec": "127760",
     "tags": [
+	  "symbols",
       "localization",
       "internationalization",
       "localisation",
