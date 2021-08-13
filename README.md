@@ -4,10 +4,7 @@
 
 👍[**gites**](https://sokolak.wixsite.com/gites) is an emoji repository that can help you to highlight purpose or intent of your [git](https://git-scm.com/) commits. The project inspired by the [gitmoji](https://gitmoji.dev/) initiative.
 
-
-
 <img src="./src/main/resources/static/screenshot.png">
-
 
 
 ## ⚙️ Technologies
@@ -21,10 +18,17 @@
 | [H2](https://www.h2database.com/html/main.html)            |                                              |
 
 
+## 🛠️️ Installation
+
+0. Install [NodeJS](https://nodejs.org/en/) and [Bower](https://Bower.io/)
+1. Go to `gites\src\main\resources\static`
+2. Run `bower update` in the command line
+3. Open, build and run the `GitesApplication` Java project
+
 
 ## 🔌 REST API
 
-👍**gites** exposes the REST API with the following JSON endpoints:
+👍**gites** exposes the REST API with the following JSON endpoints (the default port is 8080):
 
 | Endpoint 🟢                                    | Description 📝                                                |
 | :-------------------------------------------- | :----------------------------------------------------------- |
